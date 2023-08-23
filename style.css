@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+bgimage{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    /* height: 750px; */
+}
+.bull{
+    position: relative;
+    bottom: 350px;
+    left: 250px;
+}
+.bus{
+    position: relative;
+    bottom: 380px;
+    left: 600px;
+    animation-name: bus_animation;
+    animation-direction:normal;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.car{
+    position: relative;
+    bottom: 750px;
+    left: 600px;
+    animation-name: bus_animation;
+    animation-direction:reverse;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+}
+@keyframes bus_animation {
+    0%{
+        left: 800px;
+    }
+    100%{
+        left: -250px;
+    }    
+}
